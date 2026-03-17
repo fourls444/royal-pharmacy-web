@@ -11,9 +11,6 @@ export default function Header() {
         </div>
       </div>
 
-      <div className={styles.right}>
-        🌐 TH ▾
-      </div>
     </header>
   );
 }

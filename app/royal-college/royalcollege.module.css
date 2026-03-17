@@ -1,10 +1,10 @@
 .hero {
-    height: 420px;
+    width: 100%;
+    aspect-ratio: 1920 / 420; /* Based on typical banner size */
     background: url("/images/banner/banner.jpg") center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
-    padding-left: 80px;
     color: white;
 }
 
@@ -12,12 +12,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
-}
-
-.hero h1 {
-    position: relative;
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.3); /* Simple dimming overlay */
+    z-index: 0;
 }
 
 .about {
@@ -548,7 +544,7 @@
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 
 .featuredContent h3 {
@@ -685,4 +681,186 @@
     line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.aboutSection, .historySection, .meetingsSection, .newsSection, .collegesSection {
+    width: 100%;
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+
+@media (max-width: 1024px) {
+    .aboutSection, .historySection, .meetingsSection, .newsSection, .collegesHeader {
+        padding: 40px 20px;
+    }
+    
+    .hero {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .heroContent {
+        gap: 15px;
+    }
+
+    .heroLogo {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+    }
+
+    .heroText h1 {
+        font-size: 18px;
+    }
+
+    .heroText p {
+        font-size: 14px;
+    }
+
+    .aboutSection, .historySection, .meetingsSection, .newsSection, .collegesHeader {
+        padding: 30px 15px !important;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .imageBox {
+        width: 100% !important;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .historyMenu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .historyMenu h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menuItem {
+        text-align: center;
+    }
+
+    .timelineItem {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .yearBox {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .collegesHeader {
+        padding: 0 20px;
+    }
+
+    .collegesGrid {
+        display: flex;
+        height: 350px; /* Reduced height for mobile but keep horizontal */
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .collegeCard {
+        flex: 1;
+        height: 100%;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: none;
+        width: auto;
+    }
+    
+    .collegeCard:hover {
+        flex: 3; /* More dramatic expansion on mobile hover */
+        height: 100%;
+    }
+
+    .collegeOverlay {
+        height: 100%;
+        padding: 10px;
+        background: linear-gradient(to top, rgba(94, 99, 48, 0.8) 0%, transparent 60%);
+    }
+
+    .collegeOverlay p {
+        font-size: 11px;
+        padding-left: 6px;
+    }
+
+    /* MEETINGS */
+    .meetingsHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .meetingItem {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dateBoxWrapper {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .verticalDivider {
+        display: none;
+    }
+
+    .meetingImage {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* NEWS */
+    .featuredCard {
+        flex-direction: column;
+    }
+
+    .featuredImage {
+        width: 100%;
+        min-height: 250px; /* Reduced from 400px */
+        height: 250px;
+    }
+
+    .featuredContent {
+        width: 100%;
+        padding: 25px 20px; /* Reduced padding */
+        justify-content: flex-start; /* Align content to top */
+    }
+
+    .newsGrid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .statCard h3 {
+        font-size: 28px;
+    }
+
+    .featuredContent h3 {
+        font-size: 20px;
+    }
 }

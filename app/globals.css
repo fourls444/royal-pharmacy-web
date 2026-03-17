@@ -1,4 +1,17 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Prompt", sans-serif;
+  background-color: #fff;
 }

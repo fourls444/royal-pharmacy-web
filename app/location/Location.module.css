@@ -40,3 +40,15 @@
     object-fit: contain;
     border-radius: 16px;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+}

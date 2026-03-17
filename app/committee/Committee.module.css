@@ -59,3 +59,19 @@
     width: 100%;
     display: block;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 18px;
+    }
+    
+    .presidentCard {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .card {
+        width: calc(50% - 10px); /* 2 columns on mobile */
+    }
+}
