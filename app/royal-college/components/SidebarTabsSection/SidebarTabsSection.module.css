@@ -1,0 +1,237 @@
+.historySection {
+    display: flex;
+    gap: 40px;
+    padding: 60px 80px;
+    background: #fff;
+    width: 100%;
+}
+
+/* ===================== LEFT MENU ===================== */
+.historyMenu {
+    width: max-content;
+    min-width: 280px;
+    flex-shrink: 0;
+}
+
+.historyMenu h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #4f5921;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.historyMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menuItem {
+    padding: 14px 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.menuItem:hover {
+    background: #e8e8d8;
+}
+
+.active {
+    background: linear-gradient(to right, #72721B 0%, #C5C58C 100%);
+    color: white !important;
+    font-weight: 500;
+}
+
+/* ===================== RIGHT CONTENT ===================== */
+.historyContent {
+    flex: 1;
+    min-width: 0;
+}
+
+/* --- HEADING --- */
+.mainHeading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 14px 0;
+    line-height: 1.3;
+    font-style: bold;
+}
+
+.subText {
+    font-size: 18px;
+    margin: 0 0 24px 0;
+    color: #0F0F0F99;
+    line-height: 1.8;
+    font-style: bold;
+    font-weight: 700;
+}
+
+/* ===================== TIMELINE ===================== */
+.timeline {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-bottom: 32px;
+}
+
+.timelineItem {
+    display: contents;
+}
+
+
+
+.yearBox {
+    min-width: max-content;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    border-left: 2px solid #C0C000;;
+    padding: 18px 20px;
+    background: linear-gradient(to right,#f0f0d8 0%, #FFFFFF 80%);
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+
+.yearText {
+    font-size: 18px;
+    font-weight: 700;
+    color: #72721BB3;
+    
+    line-height: 1.3;
+}
+
+.titleText {
+    font-size: 18px;
+    font-weight: 600;
+ 
+    color: #000000B3;
+    line-height: 1.3;
+}
+
+.timelineDesc {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: bold;
+    color: #000000B3;
+    line-height: 1.7;
+    margin: 0;
+    padding: 18px 0 18px 36px;
+    display: flex;
+    align-items: center;
+    white-space: pre-wrap;
+}
+
+/* ===================== BADGE ===================== */
+.badgeRow {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0 18px 0;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0f0d8;
+    color: #5e6330;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.badgeIcon {
+    color: #7a7536;
+    font-size: 16px;
+}
+
+
+
+/* --- PLACEHOLDER TAB --- */
+.placeholderTab h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.placeholderTab p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 1024px) {
+    .historySection {
+        padding: 40px 20px;
+    }
+
+    .yearBox {
+        min-width: max-content;
+    }
+}
+
+@media (max-width: 768px) {
+    .historySection {
+        padding: 30px 15px !important;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .historyMenu {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .historyMenu h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menuItem {
+        text-align: center;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timelineItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .yearBox {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        margin: 0;
+        white-space: normal;
+    }
+
+    .timelineDesc {
+        padding: 10px 0 16px 0;
+    }
+
+
+
+    .mainHeading {
+        font-size: 24px;
+    }
+}

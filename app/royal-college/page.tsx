@@ -1,6 +1,6 @@
 import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "./components/AboutSection/AboutSection";
-import HistorySection from "./components/HistorySection/HistorySection";
+import SidebarTabsSection from "./components/SidebarTabsSection/SidebarTabsSection";
 import HighlightSection from "./components/HighlightSection/HighlightSection";
 import MeetingsSection from "./components/MeetingsSection/MeetingsSection";
 import NewsSection from "./components/NewsSection/NewsSection";
@@ -13,7 +13,7 @@ export default function RoyalCollegePage() {
            
             <HeroSection />
             <AboutSection />
-            <HistorySection />
+            <SidebarTabsSection />
             <HighlightSection/>
             <CollegesSection/>
             <MeetingsSection />
