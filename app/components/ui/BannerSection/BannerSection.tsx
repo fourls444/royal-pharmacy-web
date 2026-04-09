@@ -1,6 +1,6 @@
-import styles from "./HeroSection.module.css";
+import styles from "./BannerSection.module.css";
 
-export default function HeroSection() {
+export default function BannerSection() {
     return (
         <section className={styles.hero}>
             <div className={styles.container}>

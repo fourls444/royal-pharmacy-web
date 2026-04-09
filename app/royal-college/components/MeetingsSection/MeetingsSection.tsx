@@ -11,7 +11,7 @@ const MEETINGS = [
             <>ผู้เข้าร่วม : <span className={styles.spacing}>บุคคลทั่วไป</span> <span className={styles.tagGreen}>เภสัชกร</span> <span className={styles.spacing2}>จำนวน : 100 คน</span></>
         ),
         category: "หมวดหมู่ : ราชวิทยาลัย",
-        image: "/images/section3/img1.png",
+        image: "/images/meeting/img1.png",
     },
     {
         day: "1",
@@ -23,7 +23,7 @@ const MEETINGS = [
             <>ผู้เข้าร่วม : <span className={styles.tagGreen}>เภสัชกร</span> <span className={styles.spacing2}>จำนวน : 100 คน</span></>
         ),
         category: "หมวดหมู่ : ราชวิทยาลัย",
-        image: "/images/section3/img2.png",
+        image: "/images/meeting/img2.png",
     },
     {
         day: "13",
@@ -35,7 +35,7 @@ const MEETINGS = [
             <>ผู้เข้าร่วม : <span className={styles.spacing}>บุคคลทั่วไป</span> <span className={styles.spacing2}>จำนวน : 100 คน</span></>
         ),
         category: "หมวดหมู่ : ราชวิทยาลัย",
-        image: "/images/section3/img3.png",
+        image: "/images/meeting/img3.png",
     },
 ];
 
@@ -63,19 +63,19 @@ export default function MeetingsSection() {
 
                             <div className={styles.meetingDetail}>
                                 <div className={styles.detailRow}>
-                                    <img src="/images/section3/MapPin.png" alt="location" className={styles.iconImg} />
+                                    <img src="/images/meeting/MapPin.png" alt="location" className={styles.iconImg} />
                                     <span>{meeting.location}</span>
                                 </div>
                                 <div className={styles.detailRow}>
-                                    <img src="/images/section3/Calendar.png" alt="calendar" className={styles.iconImg} />
+                                    <img src="/images/meeting/Calendar.png" alt="calendar" className={styles.iconImg} />
                                     <span>{meeting.dateRange}</span>
                                 </div>
                                 <div className={styles.detailRow}>
-                                    <img src="/images/section3/Users.png" alt="users" className={styles.iconImg} />
+                                    <img src="/images/meeting/Users.png" alt="users" className={styles.iconImg} />
                                     <span>{meeting.participants}</span>
                                 </div>
                                 <div className={styles.detailRow}>
-                                    <img src="/images/section3/Tag.png" alt="tag" className={styles.iconImg} />
+                                    <img src="/images/meeting/Tag.png" alt="tag" className={styles.iconImg} />
                                     <span>{meeting.category}</span>
                                 </div>
                             </div>

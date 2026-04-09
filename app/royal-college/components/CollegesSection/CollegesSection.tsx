@@ -1,13 +1,13 @@
 import styles from "./Colleges.module.css";
 
 const COLLEGES_DATA = [
-    { title: "วิทยาลัย\nเภสัชบำบัด", bg: "/images/colleges/bg1.png", logo: "/images/colleges/logo1.png", link: "https://pharmacotherapy-web-demo.vercel.app/" },
-    { title: "วิทยาลัย\nคุ้มครองผู้บริโภคด้านยา", bg: "/images/colleges/bg2.png", logo: "/images/colleges/logo2.png", link: "https://consumer-protection-web-demo.vercel.app/" },
-    { title: "วิทยาลัย\nเภสัชกรรมอุตสาหการ", bg: "/images/colleges/bg3.png", logo: "/images/colleges/logo3.png", link: "https://industrial-pharmacy-web-demo.vercel.app/" },
-    { title: "วิทยาลัย\nเภสัชกรรมชุมชน", bg: "/images/colleges/bg4.png", logo: "/images/colleges/logo4.png", link: "https://community-pharmacy-web-demo.vercel.app/" },
-    { title: "วิทยาลัย\nบริหารเภสัชกิจ", bg: "/images/colleges/bg5.png", logo: "/images/colleges/logo5.png", link: "https://pharmaceutical-admin-web-demo.vercel.app/" },
-    { title: "วิทยาลัย\nเภสัชพันธุศาสตร์", bg: "/images/colleges/bg6.png", logo: "/images/colleges/logo6.png", link: "https://pharmacogenomics-web.vercel.app/" },
-    { title: "วิทยาลัย\nเภสัชกรรมสมุนไพร", bg: "/images/colleges/bg7.png", logo: "/images/colleges/logo7.png", link: "https://herbal-pharmacy-web-demo.vercel.app/" },
+    { title: "วิทยาลัย\nเภสัชบำบัด", bg: "/images/colleges/bg1.png", logo: "/images/colleges/logo1.png", link: "https://pharmacotherapy-web-feedback1.vercel.app/" },
+    { title: "วิทยาลัย\nคุ้มครองผู้บริโภคด้านยา", bg: "/images/colleges/bg2.png", logo: "/images/colleges/logo2.png", link: "https://consumer-protection-web-feedback1.vercel.app/" },
+    { title: "วิทยาลัย\nเภสัชกรรมอุตสาหการ", bg: "/images/colleges/bg3.png", logo: "/images/colleges/logo3.png", link: "https://industrial-pharmacy-web-feedback1.vercel.app/" },
+    { title: "วิทยาลัย\nเภสัชกรรมชุมชน", bg: "/images/colleges/bg4.png", logo: "/images/colleges/logo4.png", link: "https://community-pharmacy-web-feedback1.vercel.app/" },
+    { title: "วิทยาลัย\nบริหารเภสัชกิจ", bg: "/images/colleges/bg5.png", logo: "/images/colleges/logo5.png", link: "https://pharmaceutical-admin-web-feedback1.vercel.app/" },
+    { title: "วิทยาลัย\nเภสัชพันธุศาสตร์", bg: "/images/colleges/bg6.png", logo: "/images/colleges/logo6.png", link: "https://pharmacogenomics-web-feedback1.vercel.app/" },
+    { title: "วิทยาลัย\nเภสัชกรรมสมุนไพร", bg: "/images/colleges/bg7.png", logo: "/images/colleges/logo7.png", link: "https://herbal-pharmacy-web-feedback1.vercel.app/" },
 ];
 
 export default function CollegesSection() {

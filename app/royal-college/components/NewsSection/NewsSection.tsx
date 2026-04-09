@@ -2,19 +2,19 @@ import styles from "./NewsSection.module.css";
 
 const NEWS_ITEMS = [
     {
-        image: "/images/section4/Container1.png",
+        image: "/images/news/Container1.png",
         title: "สภาเภสัชกรรมเปิดตัวหลักสูตรเภสัชศาสตรมหาบัณฑิต สาขาเภสัชกรรมคลินิก",
         description:
             "สภาเภสัชกรรมเปิดตัวหลักสูตรใหม่ล่าสุด! หลักสูตรเภสัชศาสตรมหาบัณฑิต สาขาเภสัชกรรมคลินิก มุ่งเน้นการพัฒนาเภสัชกรให้มีความเชี่ยวชาญ",
     },
     {
-        image: "/images/section4/Container2.png",
+        image: "/images/news/Container2.png",
         title: "สภาเภสัชกรรมอนุมัติหลักสูตรใหม่: เภสัชกรผู้เชี่ยวชาญด้านการบริบาลผู้ป่วยสูงอายุ",
         description:
             "สภาเภสัชกรรมอนุมัติหลักสูตรใหม่: เภสัชกรผู้เชี่ยวชาญด้านการบริบาลผู้ป่วยสูงอายุ หลักสูตรระยะสั้นที่ออกแบบมาเพื่อเพิ่มพูนความรู้และทักษะในการดูแลผู้สูงอายุอย่างครบวงจร ระยะเวลาอบรมอย่างน้อย 16 สัปดาห์",
     },
     {
-        image: "/images/section4/Container3.png",
+        image: "/images/news/Container3.png",
         title: "ประกาศรับสมัคร: หลักสูตรเภสัชศาสตรบัณฑิต สาขาการจัดการเภสัชสนเทศ",
         description:
             "เปิดรับสมัคร: หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาเภสัชกรรมดิจิทัล มุ่งเน้นการใช้เทคโนโลยีสารสนเทศในการจัดการยาและเวชภัณฑ์ เหมาะสำหรับเภสัชกรที่ต้องการพัฒนาทักษะด้านดิจิทัล",
@@ -36,7 +36,7 @@ export default function NewsSection() {
 
                 <div className={styles.featuredCard}>
                     <div className={styles.featuredImage}>
-                        <img src="/images/section4/img.png" alt="featured" />
+                        <img src="/images/news/img.png" alt="featured" />
                     </div>
                     <div className={styles.featuredContent}>
                         <div className={styles.tagOlive}>ข่าวประชาสัมพันธ์</div>
