@@ -23,7 +23,7 @@ interface SidebarProps {
 export default function Sidebar({ menuItems, activeTab, onTabChange }: SidebarProps) {
   return (
     <div className={styles.historyMenu}>
-      <h3>"ยกระดับสมุนไพรไทย<br />ด้วยมาตรฐานเภสัชกรรมระดับสากล"</h3>
+      <h3>"จากมาตรฐานวิชาชีพ<br />สู่คุณค่าที่ส่งต่อถึงผู้ป่วยและสังคม"</h3>
       <ul>
         {menuItems.map((item) => (
           <li
